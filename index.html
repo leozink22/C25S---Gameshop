@@ -12,7 +12,12 @@
         <div class="logo">
             <img src="./img/logoJoystick 1.svg" alt="">
             <span class="logo-texto">Game<span class="rojo">Shop</span></span>
-            
+        </div>
+
+        <div class="hamburguesa" id="btnHamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
         <div class="menu-derecha">
@@ -98,6 +103,15 @@
         <p class="derechos">Todos los derechos reservados TDW</p>
 
     </footer>
+
+    <script>
+    const btn = document.getElementById("btnHamburguesa");
+    const menu = document.getElementById("menuNav");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("activo");
+    });
+</script>
     
 </body>
 </html>
